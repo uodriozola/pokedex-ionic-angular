@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { MessageComponentModule } from '../message/message.module';
+import { PokeCardModule } from '../components/poke-card/poke-card.module';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { MessageComponentModule } from '../message/message.module';
     FormsModule,
     IonicModule,
     MessageComponentModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    PokeCardModule
   ],
   declarations: [HomePage]
 })
