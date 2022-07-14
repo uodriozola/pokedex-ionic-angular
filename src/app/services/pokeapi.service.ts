@@ -13,7 +13,7 @@ export class PokeapiService {
     this.url = environment.pokeApiUrl;
    }
 
-  getAllPokemons() {
-    return this.http.get(this.url + '/pokemons');
+  getAllPokemons(page = 0) {
+    return this.http.get(`${this.url}/pokemons?offset=${page}`);
   }
 }
