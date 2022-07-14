@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  pokeApiUrl: 'https://pokedex-ionic-angular-bice.vercel.app/',
 };
